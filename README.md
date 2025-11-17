@@ -5,13 +5,6 @@
 ---
 A HIGH Streetwear é um projeto de e-commerce voltado para a venda de produtos streetwear de forma mais rápida, dinâmica e eficiente. A plataforma foi pensada para otimizar a jornada do cliente, oferecendo uma navegação fluida, interface moderna e funcionalidades que facilitam a etapa da compra.
 
-
-🌐 Visualize o Projeto
----
-👉 **[Clique aqui para acessar](https://joaogallindo.github.io/HIGH-Streetwear-E-commerce/)**
-
-
-
 📄 Funcionalidades
 ---
 - Visualização do modelo da camisa
@@ -22,3 +15,8 @@ A HIGH Streetwear é um projeto de e-commerce voltado para a venda de produtos s
 - Upload de comprovante PIX integrado
 - Validação de formulário em tempo real
 - Botão flutuante de WhatsApp para atendimento
+
+🌐 Visualize o Projeto
+---
+👉 **[Clique aqui para acessar](https://joaogallindo.github.io/HIGH-Streetwear-E-commerce/)**
+
