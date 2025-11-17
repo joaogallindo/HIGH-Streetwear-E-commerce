@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>High Company®</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <header class="header">
+      <div class="top-bar">
+        <div class="marquee-content">
+            <span style="color: #000;">FRETE GRÁTIS <strong>ACIMA DE R$199</strong></span>
+            <span><a target="_blank" rel="noopener noreferrer">ENTRE PARA NOSSO <strong>GRUPO VIP</strong></a></span>
+            <span style="color: #000;">ATENDIMENTO EXCLUSIVO NO <strong>WHATSAPP</strong></span>
+            <span style="color: #000;">FRETE GRÁTIS <strong style="color: #000;">ACIMA DE R$199</strong></span>
+            <span style="color: #000;"><a target="_blank" rel="noopener noreferrer">ENTRE PARA NOSSO <strong>GRUPO VIP</strong></a></span>
+            <span style="color: #000;">ATENDIMENTO EXCLUSIVO NO <strong>WHATSAPP</strong></span>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="logo-placeholder">
+        <img src="images/logo.svg" alt="Logo" class="custom-logo" />
+      </div>
+      <h1 class="header-title">PRÉ-VENDA</h1>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+
+      <!-- AVISO DE PRAZO EM DESTAQUE -->
+      <div style="background-color: #1f1f1f; border: 2px solid #ffcc00; color: #ffffff; padding: 20px; border-radius: 12px; font-size: 16px; margin-bottom: 40px; box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);">
+        <p style="margin: 0; font-weight: 600; font-size: 18px;">⚠️ <span style="color: #ffcc00;">ATENÇÃO:</span></p>
+        <p style="margin-top: 10px;">
+          As camisas serão enviadas em até 3 dias úteis após a confirmação da compra. 
+          <strong style="color: #ffcc00;">O prazo mínimo para entrega é de 5 dias úteis.</strong>
+        </p>
+        <p style="margin-top: 8px;">
+          Entraremos em contato via <strong>WhatsApp</strong> para validar os dados e assegurar a conclusão e entrega do seu pedido.
+        </p>
+      </div>
+
+
+
+
+      <section class="form-section">
+        <form id="preOrderForm" class="form">
+          <!-- Dados Pessoais -->
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required />
+          </div>
+
+          <!-- Escolha da Camisa -->
+          <div class="form-group">
+            <label for="tamanho">Tamanho da camisa</label>
+            <select id="tamanho" name="tamanho" required>
+              <option value="">Selecione o tamanho</option>
+              <option value="P">P</option>
+              <option value="M">M</option>
+              <option value="G">G</option>
+              <option value="GG">GG</option>
+              <option value="XGG">XGG</option>
+            </select>            
+          </div>
+          
+           <div class="fab-container">
+        <a href="https://wa.me/" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Entrar em contato via WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <path d="M0 48L3.374 35.674C1.292 32.066 0.198 27.976 0.2 23.782C0.206 10.67 10.876 0 23.986 0C30.348 0.002 36.32 2.48 40.812 6.976C45.302 11.472 47.774 17.448 47.772 23.804C47.766 36.918 37.096 47.588 23.986 47.588C20.006 47.586 16.084 46.588 12.61 44.692L0 48ZM13.194 40.386C16.546 42.376 19.746 43.568 23.978 43.57C34.874 43.57 43.75 34.702 43.756 23.8C43.76 12.876 34.926 4.02 23.994 4.016C13.09 4.016 4.22 12.884 4.216 23.784C4.214 28.234 5.518 31.566 7.708 35.052L5.71 42.348L13.194 40.386ZM35.968 29.458C35.82 29.21 35.424 29.062 34.828 28.764C34.234 28.466 31.312 27.028 30.766 26.83C30.222 26.632 29.826 26.532 29.428 27.128C29.032 27.722 27.892 29.062 27.546 29.458C27.2 29.854 26.852 29.904 26.258 29.606C25.664 29.308 23.748 28.682 21.478 26.656C19.712 25.08 18.518 23.134 18.172 22.538C17.826 21.944 18.136 21.622 18.432 21.326C18.7 21.06 19.026 20.632 19.324 20.284C19.626 19.94 19.724 19.692 19.924 19.294C20.122 18.898 20.024 18.55 19.874 18.252C19.724 17.956 18.536 15.03 18.042 13.84C17.558 12.682 17.068 12.838 16.704 12.82L15.564 12.8C15.168 12.8 14.524 12.948 13.98 13.544C13.436 14.14 11.9 15.576 11.9 18.502C11.9 21.428 14.03 24.254 14.326 24.65C14.624 25.046 18.516 31.05 24.478 33.624C25.896 34.236 27.004 34.602 27.866 34.876C29.29 35.328 30.586 35.264 31.61 35.112C32.752 34.942 35.126 33.674 35.622 32.286C36.118 30.896 36.118 29.706 35.968 29.458Z" fill="#25D366"/>
+</svg>
+        </a>
+    </div>
+
+          <div class="form-group">
+            <label>Tabela de Medidas</label>
+            <div style="text-align: center;">
+              <img src="images/tabelamedida-camiseta-high.jpg" alt="Tabela de Medidas" style="max-width: 100%; border-radius: 8px; border: 1px solid #555; margin-top: 10px;" />
+            </div>
+          </div>
+          
+
+          <!-- Cronômetro -->
+          <div style="text-align: center; margin: 20px 0;">
+            <div class="cronometro-banner">
+              <span class="relogio-icon">🕒</span>
+              <span id="cronometro-hora">00:00:20</span>
+              <span class="cronometro-alerta">⚠️ Desconto está acabando!</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Modelo da camisa</label>
+            <div class="shirt-selector">
+
+              <!-- Camisa Preta -->
+              <div class="shirt-option" data-color="preta" data-price="R$ 89,90">
+                <div class="shirt-images">
+                  <img class="front-image" src="images/blackfrente.jpg" alt="Camisa Preta Frente" />
+                  <img class="back-image" src="images/blackfundo.jpg" alt="Camisa Preta Verso" />
+                </div>
+                <span>Camiseta Wheelie Black</span>
+                <span class="price" style="text-decoration: line-through; color: #888;">R$ 109,90</span>
+                <span class="price" style="color: #33ff99; font-weight: 600;">R$ 89,90</span>
+              </div>
+
+              <!-- Camisa Branca -->
+              <div class="shirt-option" data-color="branca" data-price="R$ 89,90">
+                <div class="shirt-images">
+                  <img class="front-image" src="images/Camisawhite_frente.jpg" alt="Camisa Branca Frente" />
+                  <img class="back-image" src="images/Camisawhite_fundo.png" alt="Camisa Branca Verso" />
+                </div>
+                <span>Camiseta Cellphone White</span>
+                <span class="price" style="text-decoration: line-through; color: #888;">R$ 109,90</span>
+                <span class="price" style="color: #33ff99; font-weight: 600;">R$ 89,90</span>
+              </div>
+
+            </div>
+            <input type="hidden" id="modelo" name="modelo" required />
+          </div>
+
+          
+
+          <!-- Pagamento -->
+          <!-- Pagamento via Pix -->
+          <div class="form-group pix-payment-section">
+            <label>Pagamento via Pix</label>
+            <div class="pix-details">
+              <img src="images/frame.png" alt="QR Code Pix" class="pix-qrcode" />
+              <span class="pix-label">Chave Pix:</span>
+              <span id="chavePix" class="pix-key">suaempresa@gmail.com</span>
+              <span style="font-size: 14px; color: #ccc;">Destinatário:</span>
+              <button type="button" id="copiarPix" class="pix-copy-button">Copiar</button>
+            </div>
+
+            <div class="form-group">
+              <label for="comprovante">Anexe o comprovante do Pix</label>
+              <input type="file" id="comprovante" name="comprovante" accept="image/*,application/pdf" required />
+            </div>
+
+            <!-- NOVOS CHECKBOXES -->
+            <div class="form-group-checkbox">
+              <input type="checkbox" id="pagamentoParcial" name="pagamentoParcial" />
+              <label for="pagamentoParcial">Paguei 50% agora e vou pagar o restante quando a camisa estiver pronta</label>
+            </div>
+
+            <div class="form-group-checkbox">
+              <input type="checkbox" id="pagamentoCompleto" name="pagamentoCompleto" />
+              <label for="pagamentoCompleto">Já paguei o valor total</label>
+            </div>
+
+            <!-- AVISO SOBRE A OPÇÃO DE PAGAMENTO PARCELADO -->
+            <p style="margin-top: 16px; font-size: 15px; color: #ccc;">
+              💡 <strong>Atenção:</strong> Você pode pagar 50% agora e os outros 50% depois, somente quando a camisa estiver pronta para envio.
+            </p>
+          </div>
+
+        </form>
+      </section>
+
+      <!-- Vídeos -->
+      <section class="videos-section">
+        <div class="video-container">
+          <h3>Nova coleção da HIGH 🔥</h3>
+          <div class="video-placeholder">
+            <video src="videos/video1.mp4" controls class="video-final"></video>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <h3>Brand Shooting</h3>
+          <div class="video-placeholder">
+            <video src="videos/video2.mp4" controls class="video-final"></video>
+          </div>
+        </div>          
+      </section>
+
+      <!-- Botão Final -->
+      <section class="submit-section">
+        <button type="submit" form="preOrderForm" class="submit-btn">
+          Finalizar Compra!
+        </button>
+        <p style="text-align:center; margin-top: 10px; font-size: 14px; color: #8e8e93;">
+          Essa é sua chance de ter uma peça única antes de todo mundo.
+        </p>
+      </section>
+    </div>
+  </main>
+
+   <footer class="main-footer reveal" id="footer">
+        <div class="footer-content container">
+            <nav class="footer-links" aria-label="Navegação do rodapé">
+                <a style="text-decoration: none;" href="#" data-modal-target="modal-guia-tamanhos">Guia de Tamanhos</a>
+                <a style="text-decoration: none;" href="#" data-modal-target="modal-termos-uso">Termos de Uso</a> 
+                <a style="text-decoration: none;" href="#" data-modal-target="modal-politica-privacidade">Política de Privacidade</a>
+            </nav>
+
+            <div class="footer-socials">
+                <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Siga-nos no Instagram">
+                    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                     <g clip-path="url(#clip0_17_63)">
+                       <path d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z" fill="white"/>
+                       <path d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z" fill="white"/>
+                        <path d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z" fill="white"/>
+                      </g>
+                      <defs>
+                       <clipPath id="clip0_17_63">
+                          <rect width="48" height="48" fill="white"/>
+                       </clipPath>
+                     </defs>
+                   </svg>
+                </a>
+            </div>
+
+            <div class="footer-contact">
+                <p><a style="color:#ffcc00;" href="#">(71) 00000-0000</a></p>
+                <p><a style="color:#ffcc00;" href="#">suaempresa@gmail.com</a></p>
+            </div>
+            <div class="footer-credits">
+                <p style="margin-top: 25px;"  class="copyright">SUAEMPRESA - 2025. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- Popup -->
+  <div id="popup-notification" class="popup-notification">
+    <p id="popup-text"></p>
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>
